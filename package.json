@@ -1,0 +1,19 @@
+{
+  "name": "recipe",
+  "version": "1.0.0",
+  "description": "![Design preview for the Recipe page coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "bulid:css": "postcss css/app.css --dir dest",
+    "watch:css": "postcss css/app.css --dir dest -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "postcss-sorting": "^9.1.0"
+  }
+}

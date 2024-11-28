@@ -1,0 +1,163 @@
+html {
+    //Mobile
+    font-family: "Outfit", serif;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100vw;
+        background-color: hsl(30, 54%, 90%); //change font-size without using media query ==> use "rem"?
+        margin: 0px
+    }
+
+    h1 {
+        font-family: "Young Serif", serif;
+        font-size: 2rem;
+        font-weight: 400;
+        color: hsl(24, 5%, 18%);
+    }
+
+    h2 {
+        font-family: "Young Serif", serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: hsl(14, 45%, 36%);
+    }
+
+    h3 {
+        font-size: 1.17rem;
+        font-weight: 600;
+        color: hsl(332, 51%, 32%);
+    }
+
+    b {
+        font-weight: 700;
+        color: hsl(30, 10%, 34%);
+    }
+
+    figure {
+        margin: 0px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 1.5% 1.5% 0 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    ul {
+        padding-inline-start: 25px;
+
+        li {
+            padding: 8px;
+
+            &::marker {
+                color: hsl(14, 45%, 36%);
+            }
+        }
+    }
+
+    ol {
+        padding-inline-start: 25px;
+
+        li {
+            padding: 8px;
+
+            &::marker {
+                color: hsl(14, 45%, 36%);
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.recipe-box {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    border-radius: 1.5%;
+
+
+    .recipe-content {
+        width: 80%;
+        height: 100%;
+
+        .note {
+            background-color: hsl(330, 100%, 98%);
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        .recipe-section {
+            border-bottom: 1px solid hsla(32, 10%, 34%, 0.368);
+
+            &:last-child {
+                border-bottom: none
+            }
+
+            .nut-box {
+                list-style: none;
+
+                li.nut-box-item {
+                    border-bottom: 1px solid hsla(32, 10%, 34%, 0.333);
+                    padding: 10px;
+                    width: 80%;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    span {
+                        width: 40%;
+                        display: inline-block;
+                        text-align: left;
+                        padding-left: 10px;
+                    }
+
+                    b {
+                        color: hsl(14, 45%, 36%);
+                        width: 50%;
+                        display: inline-block;
+                        text-align: left;
+
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1440px) {
+
+    //PC
+    .recipe-box {
+        margin: 5%;
+
+
+    }
+}
