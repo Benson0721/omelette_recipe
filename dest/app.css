@@ -18,18 +18,18 @@ html body {
 html h1 {
   color: hsl(24, 5%, 18%);
   font-family: "Young Serif", serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 400;
 }
 html h2 {
   color: hsl(14, 45%, 36%);
   font-family: "Young Serif", serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 html h3 {
   color: hsl(332, 51%, 32%);
-  font-size: 1.17rem;
+  font-size: 1.67rem;
   font-weight: 600;
 }
 html b {
@@ -40,7 +40,6 @@ html figure {
   overflow: hidden;
   width: 100%;
   margin: 0px;
-  border-radius: 1.5% 1.5% 0 0;
 }
 html img {
   width: 100%;
@@ -118,8 +117,22 @@ html ol li::marker {
 }
 
 @media only screen and (min-width: 1440px) {
+  html figure {
+    width: 90%;
+    border-radius: 3.5%;
+    margin-top: 5%;
+  }
+  html h1 {
+    font-size: 2.5rem;
+  }
+  html h2 {
+    font-size: 2rem;
+  }
   .recipe-box {
-    margin: 5%;
+    margin: 10%;
+  }
+  .recipe-box .recipe-content {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=app.css.map */
