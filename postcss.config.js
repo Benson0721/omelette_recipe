@@ -1,9 +1,6 @@
 
 module.exports = {
     plugins: [
-        require('cssnano')({
-            preset: 'default',
-        }),
         require('postcss-sorting')({
             order: [
                 'custom-properties',
@@ -42,6 +39,6 @@ module.exports = {
             ],
 
             'unspecified-properties-position': 'bottom',
-        }),
+        })
     ],
 };
