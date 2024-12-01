@@ -1,10 +1,15 @@
+@charset "utf-8";
+
+@import url('../assets/fonts/font.css');
+
+
 html {
     //Mobile
-    font-family: "Outfit", serif;
+    font-family: "Outfit";
     box-sizing: border-box;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: clamp(1rem,0.8rem + 0.5vw,2rem);
     color: hsl(30, 10%, 34%);
+
 
     body {
         display: flex;
@@ -30,13 +35,6 @@ html {
         font-weight: 400;
         color: hsl(14, 45%, 36%);
     }
-
-    h3 {
-        font-size: 1.67rem;
-        font-weight: 600;
-        color: hsl(332, 51%, 32%);
-    }
-
     b {
         font-weight: 700;
         color: hsl(30, 10%, 34%);
@@ -49,8 +47,8 @@ html {
     }
 
     img {
-        width: 100%;
-        height: auto;
+        block-size: auto;
+        max-inline-size: 100%;
     }
 
     ul {
@@ -100,6 +98,11 @@ html {
             padding: 10px;
             border-radius: 10px;
             margin-top: 25px;
+            .note_title{
+                  font-size: 1.67rem;
+                  font-weight: 600;
+                  color: hsl(332, 51%, 32%);
+            }
         }
 
         .recipe-section {
@@ -160,13 +163,7 @@ html {
         border-radius: 3.5% ;
         margin-top: 5%;
     }
-    h1 {
-        font-size: 2.5rem; 
-    }
 
-    h2 {
-        font-size: 2rem;
-    }
     }
 
 
