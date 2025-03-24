@@ -4,7 +4,7 @@
   "description": "![Design preview for the Recipe page coding challenge](./preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "bulid:css": "postcss css/app.css --dir dest",
+    "bulid:css": "postcss css/app.css css",
     "watch:css": "postcss css/app.css --dir dest -w"
   },
   "keywords": [],
